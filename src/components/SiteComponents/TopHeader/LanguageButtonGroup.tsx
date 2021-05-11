@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import i18n from './../../../i18n';
+import i18n from '../../../i18n';
 import { useDispatch } from "react-redux";
-import {useTypedSelector} from './../../../hooks/useTypedSelector';
-import buttons from "./../../../assets/json/Buttons.json";
-import Cookie from './../../../scripts/CookieClass';
-import { setLang } from './../../../store/redusers/languageReducer';
+import {useTypedSelector} from '../../../hooks/useTypedSelector';
+import buttons from "../../../assets/json/Buttons.json";
+import Cookie from '../../../scripts/CookieClass';
+import { setLang } from '../../../store/redusers/languageReducer';
 import { ButtonGroup } from '../../ButtonGroup';
 import { Button } from '../../Button';
 import './css/style.css';
@@ -26,7 +26,7 @@ const LanguageButtonGroup = () => {
             <Button className="ButtonLanguage" active={true}>{temp?.Name}</Button>
             {buttons.languageButton.map((Item) => 
                 (language === Item.Description) ? "":
-                <Link key={Item.Description} to="">
+                <Link className="LinkButtonLanguage" key={Item.Description} to="">
                     <Button className="ButtonLanguage" onClick={() => changeLanguage(Item.Description)}>{Item.Name}</Button>
                 </Link>
             )}

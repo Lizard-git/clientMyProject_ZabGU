@@ -4,6 +4,7 @@
     border: none;
     padding: 5px;
     text-align: center;
+    line-height: normal;
 }
 
 .ActiveButton {

@@ -7,13 +7,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/style.css';
 /* _________________________________________ */
 
-import LanguageButtonGroup from './components/ComponentSite/LanguageButtonGroup/LanguageButtonGroup';
+import TopHeader from './components/SiteComponents/TopHeader';
 
 function App() {
   return (
-    <div className="ComponentCreator">
-      <LanguageButtonGroup />
-    </div>
+    <TopHeader />
   );
 }
 

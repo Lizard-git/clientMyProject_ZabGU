@@ -1,0 +1,121 @@
+.TopHeader{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContainerTopHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContainerGroup{
+    display: flex;
+    align-items: center;
+}
+.ContainerGroup + .right{
+    justify-content: flex-end;
+}
+
+.ContainerGroup + .left{
+    justify-content: flex-start;
+}
+
+.ButtonLanguage{
+    background-color: var(--white-color);
+    height: 40px;
+    width: 40px;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.LanguageGroup{
+    margin: 0;
+    padding: 0;
+    height: 40px;
+}
+
+.LinkButtonLanguage{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+/* Week component */
+.Week{
+    height: 100%;
+    display: flex;
+    margin-left: 50px;
+}
+/* style for IconWeek */
+.WrapperIconWeek{
+    width: 50px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WrapperIconWeek span{
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    width: 60%;
+}
+
+.selectedWeek{
+    height: 100%;
+}
+
+.selectedWeek p {
+    padding: 0;
+    margin: 0;    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* _________________________________________ */
+/* _________________________________________ */
+
+@media (max-width:991.98px) {
+    .textIconTop{
+        display: none !important;
+    }
+
+  /*   .Sign_in{
+        display: flex !important;
+    }
+
+    .IconTopNav{
+        margin: 0;
+    } */
+
+    .Week{
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .TopHeader{
+        height: 35px;
+    }
+    
+    .ButtonLanguage{
+        height: 35px;
+        width: 35px;
+        font-size: 11px;
+    }
+    
+    .LanguageGroup{
+        height: 35px;
+    }
+    .LinkButtonLanguage{
+        height: 35px;
+    }
+}
