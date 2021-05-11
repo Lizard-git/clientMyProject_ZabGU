@@ -1,0 +1,49 @@
+{
+    "languageButton":[
+        {
+            "id": "0", 
+            "Name": "РУС",
+            "Description": "ru",
+            "href": "/"
+        },
+        {
+            "id": "1",
+            "Name": "ENG",
+            "Description": "en",
+            "href": "/en"
+        },
+        {
+            "id": "2",
+            "Name": "中文",
+            "Description": "ch",
+            "href": "/ch"
+        }
+    ],
+
+    "TopNav":[
+        {
+            "text":"Schedule",
+            "description":"schedule",
+            "urlImg":"./../../../../resurse/icon/svg/calendar.svg",
+            "href": "/"
+        },
+        {
+            "text":"",
+            "description":"eye",
+            "urlImg":"./../../../../resurse/icon/svg/eye.svg",
+            "href": "/"
+        },
+        {
+            "text":"",
+            "description":"search",
+            "urlImg":"./../../../../resurse/icon/svg/search.svg",
+            "href": "/"
+        },
+        {
+            "text":"Sign in",
+            "description":"Sign_in",
+            "urlImg":"",
+            "href": "/"
+        }
+    ]
+}

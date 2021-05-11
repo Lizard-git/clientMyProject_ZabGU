@@ -7,8 +7,12 @@
 }
 
 .ActiveButton {
-    background-color: var(--orange-color);
-    color: var(--font-white-color);
+    background-color: var(--orange-color) !important;
+    color: var(--font-white-color) !important;
+}
+
+.ActiveButton:hover, .ActiveButton:active{
+    cursor: default;
 }
 
 .Button:hover, .Button:active{

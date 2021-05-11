@@ -4,7 +4,7 @@ import App from './App';
 import { BrowserRouter as Router } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
-import {store} from "./redusers/index";/* store from redux */
+import {store} from "./store/index";/* store from redux */
 import './i18n';
 ReactDOM.render(
   <Provider store={store}>
