@@ -29,10 +29,13 @@ html, body{
     padding: 0;
     margin: 0;
     font-family: Century_Gothic;
+    font-size: 16pt;
     background-color: var(--background-color);
 }
 
 .ComponentCreator{
+    width: 100%;
+    height: 100%;
     margin: 20px;
     background-color: white;
 }

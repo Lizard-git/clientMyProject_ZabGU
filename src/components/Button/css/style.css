@@ -1,0 +1,26 @@
+.Button{
+    width: auto;
+    height: 50px;
+    border: none;
+    padding: 5px;
+    text-align: center;
+}
+
+.ActiveButton {
+    background-color: var(--orange-color);
+    color: var(--font-white-color);
+}
+
+.Button:hover, .Button:active{
+    background-color: var(--orange-color);
+    color: var(--font-white-color);
+}
+
+@media (max-width: 992px) {
+    .Button{
+        width: 35px;
+        height: 35px;
+        font-size: 12pt;
+        padding: 0px;
+    }
+}

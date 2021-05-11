@@ -5,12 +5,15 @@ import { LayoutAdminPanel, LayoutSite, LayoutAuth } from './components/Layouts';
 /* import css project */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/style.css';
+import { Button } from './components/Button';
 /* _________________________________________ */
 
 function App() {
   return (
     <div className="ComponentCreator">
-      
+      <Button active={true}></Button>
+      <Button>Рус</Button>
+      <Button>Рус</Button>
     </div>
   );
 }
