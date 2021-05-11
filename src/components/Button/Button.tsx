@@ -10,7 +10,7 @@ interface ButtonProps{
 
 const Button:FC<ButtonProps> = ({children, onClick, className, disabled, active}) => {
     const ActiveButton = active ? "ActiveButton": "";
-    const classes = "Button" + " " + className + " " + ActiveButton;
+    const classes = "Button " + className + " " + ActiveButton;
     return (
         <button className={classes} disabled={disabled} onClick={onClick}>
             {children}
