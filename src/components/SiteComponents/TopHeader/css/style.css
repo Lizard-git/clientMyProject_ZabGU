@@ -43,6 +43,7 @@
     margin: 0;
     padding: 0;
     line-height: normal;
+    text-decoration: none;
 }
 
 /* Week component */
@@ -83,11 +84,66 @@
 /* _________________________________________ */
 /* _________________________________________ */
 
+.IconTopNav{
+    width: auto;
+    height: 25px;
+    margin:  0 5px;
+}
+
+.TopNavGroup{
+    height: 40px;
+}
+
+.LinkButtonTopNav{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.ButtonTopNav{
+    height: 40px;
+}
+
+.textIconTop{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 5px;
+}
+
+.ButtonTopNav:hover > .IconTopNav{
+    filter: invert();
+}
+
+
 @media (max-width:991.98px) {
     .textIconTop{
         display: none !important;
     }
+    .Sign_in{
+        display: flex !important;
+    }
+    .TopNavGroup{
+        height: 35px;
+    }
+    
+    .LinkButtonTopNav{
+        height: 35px;
+    }
 
+    .ButtonTopNav{
+        height: 35px;
+    }
+
+    .IconTopNav{
+        width: auto;
+        height: 20px;
+        margin:  0 5px;
+    }
   /*   .Sign_in{
         display: flex !important;
     }
@@ -109,7 +165,7 @@
     .ButtonLanguage{
         height: 35px;
         width: 35px;
-        font-size: 11px;
+
     }
     
     .LanguageGroup{
@@ -117,5 +173,32 @@
     }
     .LinkButtonLanguage{
         height: 35px;
+    }
+
+    .WrapperIconWeek{
+        width: 35px;
+        font-size: 11px;
+    }
+    
+    .Week{
+        margin-left: 0px;
+    }
+
+    .IconTopNav{
+        width: auto;
+        height: 18px;
+        margin:  0 5px;
+    }
+
+    .textIconTop{
+        font-size: 9pt;
+    }
+
+    .ButtonLanguage{
+        font-size: 9pt;
+    }
+    
+    .TopNavGroup > .eye{
+        display: none;
     }
 }

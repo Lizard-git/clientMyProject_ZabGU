@@ -3,8 +3,10 @@
     height: 50px;
     border: none;
     padding: 5px;
-    text-align: center;
     line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ActiveButton {
@@ -23,9 +25,7 @@
 
 @media (max-width: 992px) {
     .Button{
-        width: 35px;
         height: 35px;
-        font-size: 12pt;
         padding: 0px;
     }
 }

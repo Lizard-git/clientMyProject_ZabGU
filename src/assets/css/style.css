@@ -39,3 +39,5 @@ html, body{
     margin: 20px;
     background-color: white;
 }
+@media (max-width:576px) {
+}
