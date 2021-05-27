@@ -3,8 +3,9 @@ import React from 'react';
 import { LayoutAdminPanel, LayoutSite, LayoutAuth } from './components/Layouts'; */
 
 /* import css project */
+import './style/ResetCSS.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './assets/css/style.css';
+import './style/index.scss';
 /* _________________________________________ */
 
 import TopHeader from './components/SiteComponents/TopHeader';

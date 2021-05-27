@@ -26,9 +26,7 @@ const LanguageButtonGroup = () => {
             <Button className="ButtonLanguage" active={true}>{temp?.Name}</Button>
             {buttons.languageButton.map((Item) => 
                 (language === Item.Description) ? "":
-                <Link className="LinkButtonLanguage" key={Item.Description} to="">
                     <Button className="ButtonLanguage" onClick={() => changeLanguage(Item.Description)}>{Item.Name}</Button>
-                </Link>
             )}
         </ButtonGroup>
         

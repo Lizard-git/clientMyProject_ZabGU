@@ -1,27 +1,32 @@
 import React, { FC } from 'react'
+import { Link } from 'react-router-dom';
 
 interface ButtonProps{
     children?: React.ReactChild | React.ReactNode,
     onClick?: any, 
+    href?: string,
     className?: string,
-    disabled?: boolean, 
     active?: boolean
 }
 
-const Button:FC<ButtonProps> = ({children, onClick, className, disabled, active}) => {
-    const ActiveButton = active ? "ActiveButton": "";
+const Button:FC<ButtonProps> = ({children, onClick, href, className, active}) => {
+    const ActiveButton = active ? "ActiveButton":"";
     const classes = "Button " + className + " " + ActiveButton;
     return (
-        <button className={classes} disabled={disabled} onClick={onClick}>
-            {children}
-        </button>
+        <div className={classes}  onClick={onClick}>
+            {(href === "")? 
+                <Link to={href}>
+                    {children}
+                </Link>
+            : children}
+        </div>
     )
 }
 
 Button.defaultProps = {
     children: "Button", 
     onClick: null,
-    disabled: false,
+    href:"",
     active: false 
 }
 

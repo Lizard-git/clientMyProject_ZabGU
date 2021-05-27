@@ -24,19 +24,19 @@
         {
             "text":"Schedule",
             "description":"schedule",
-            "urlImg":"./../../../../resurse/icon/svg/calendar.svg",
+            "urlImg":"./../../../../resurse/icon/carbon_event-schedule.svg",
             "href": "/"
         },
         {
             "text":"",
             "description":"eye",
-            "urlImg":"./../../../../resurse/icon/svg/eye.svg",
+            "urlImg":"./../../../../resurse/icon/la_eye-solid.svg",
             "href": "/"
         },
         {
             "text":"",
             "description":"search",
-            "urlImg":"./../../../../resurse/icon/svg/search.svg",
+            "urlImg":"./../../../../resurse/icon/fe_search.svg",
             "href": "/"
         },
         {

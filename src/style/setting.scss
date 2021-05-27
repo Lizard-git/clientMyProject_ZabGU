@@ -1,0 +1,50 @@
+/* Импорт шрифтов */
+@font-face {
+    font-family: "Century_Gothic";
+    src: url("./../assets/fonts/Century_Gothic.ttf") format("truetype");
+    font-weight:normal;
+    font-style:normal;
+}
+/* _________________________________________ */
+
+/* Переменные в проекте */
+:root {
+    /* адрес цветовой схемы: https://colorscheme.ru/#3L31TkdmSw0w0 */
+    /* адрес цветовой схемы дял цвета gray: https://colorscheme.ru/#0041T00pBw0w0 */
+    /* основные цвета компонентов */
+    --blue-color: #354a7a;
+    --orange-color: #b67743;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --grey-color: #cccccc;
+
+    /* оттенки */
+    /* blue оттенки */
+    --darkblue-color: #35405C;
+    --lightblue-color: #6D85BD;
+    --ddarkblue-color: #11244F;
+    --llightblue-color: #8294BD;
+    /* orange оттенки */
+    --darkorange-color: #896548;
+    --ddarkorange-color: #764216;
+    --lightorange-color: #DBA273;
+    --llightorange-color: #DBB18F;
+    /* grey оттенки */
+    --darkgrey-color: #999999;
+    --ddarkgrey-color: #5C5C5C;
+    --lightgrey-color: #E5E5E5;
+
+    /* основные цвета текста */
+    --font-black-color: #000000;
+    --font-white-color: #ffffff; 
+    --font-orange-color: #b67743;
+    --font-grey-color: #999999;
+}
+/* _________________________________________ */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Century_Gothic";
+    background-color: var(--grey-color);
+}
