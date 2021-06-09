@@ -2,19 +2,18 @@ import React, { FC } from 'react'
 import { Link } from 'react-router-dom';
 
 interface ButtonProps{
-    children?: React.ReactChild | React.ReactNode,
+    children: React.ReactChild | React.ReactNode,
     onClick?: any, 
-    href?: string,
-    className?: string,
-    active?: boolean
+    href?: string | undefined,
+    className?: string
 }
 
-const Button:FC<ButtonProps> = ({children, onClick, href, className, active}) => {
-    const ActiveButton = active ? "ActiveButton":"";
-    const classes = "Button " + className + " " + ActiveButton;
+const Button:FC<ButtonProps> = ({children, onClick, href, className}) => {
+    const event = (onClick !== null)? "Event ":""; 
+    const classes = "Button "+ event + className;
     return (
         <div className={classes}  onClick={onClick}>
-            {(href === "")? 
+            {(href !== undefined)? 
                 <Link to={href}>
                     {children}
                 </Link>
@@ -26,8 +25,8 @@ const Button:FC<ButtonProps> = ({children, onClick, href, className, active}) =>
 Button.defaultProps = {
     children: "Button", 
     onClick: null,
-    href:"",
-    active: false 
+    href:undefined,
+    className:""
 }
 
 export default Button

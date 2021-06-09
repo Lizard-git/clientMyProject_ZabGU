@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        body{
+            padding: 20px;
+        }
+        td img {
+            filter: invert();
+        }
+
+        .title{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .title h3, h4{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .table_dark {
+            width: 100%;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+            font-size: 14px;
+            text-align: left;
+            border-collapse: collapse;
+            background: #252F48;
+        }
+
+        .table_dark th {
+            color: #EDB749;
+            border-bottom: 1px solid #37B5A5;
+            padding: 12px 17px;
+        }
+
+        .table_dark td {
+            color: #CAD4D6;
+            border-bottom: 1px solid #37B5A5;
+            border-right:1px solid #37B5A5;
+            padding: 7px 17px;
+        }
+
+        .table_dark tr:last-child td {
+            border-bottom: none;
+        }
+
+        .table_dark td:last-child {
+            border-right: none;
+        }
+
+        .table_dark tr:hover td {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h3>Все иконки в файле icons.svg лежат отдельно в public\resurse\icon </h3>
+        <h4>там же можно найти их в варианте png</h4>
+    </div>
+    <table class="table_dark">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>icon</th>
+            <th>svg symbol id</th>
+            <th>number string in file icons.svg</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>home</td>
+            <td><img src="./../../../public/resurse/icon/icon-home.svg" alt="home"></td>
+            <td>icon-home</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>search</td>
+            <td><img src="./../../../public/resurse/icon/icon-search.svg" alt="search"></td>
+            <td>icon-search</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>schedule</td>
+            <td><img src="./../../../public/resurse/icon/icon-schedule.svg" alt="schedule"></td>
+            <td>icon-schedule</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>eye</td>
+            <td><img src="./../../../public/resurse/icon/icon-eye.svg" alt="eye"></td>
+            <td>icon-eye</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>login</td>
+            <td><img src="./../../../public/resurse/icon/icon-login.svg" alt="login"></td>
+            <td>icon-login</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>exit</td>
+            <td><img src="./../../../public/resurse/icon/icon-exit.svg" alt="exit"></td>
+            <td>icon-exit</td>
+            <td>24</td>
+        </tr>
+    </table>
+</body>
+</html>

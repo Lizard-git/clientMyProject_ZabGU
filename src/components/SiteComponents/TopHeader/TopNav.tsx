@@ -10,16 +10,16 @@ const TopNav = () => {
     return (
         <ButtonGroup className="TopNavGroup">
             {buttons.TopNav.map(Item =>
-                <Link className={"LinkButtonTopNav " + Item.description} key={Item.description} to="">
-                    <Button className="ButtonTopNav">
+                    <Button key={Item.description} className="ButtonTopNav">
                         {Item.text === "" ? "" :
                             <p className={"textIconTop " + Item.description}>{t(Item.text)}</p>
                         }
                         {Item.urlImg === "" ? "" :
-                            <img className={"IconTopNav " + Item.description} src={Item.urlImg} alt="" />
+                            <svg className="svg">
+                                <use xlinkHref={Item.urlImg} />
+                            </svg>
                         }
                     </Button>
-                </Link>
             )}
         </ButtonGroup>
     )

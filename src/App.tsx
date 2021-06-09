@@ -3,16 +3,21 @@ import React from 'react';
 import { LayoutAdminPanel, LayoutSite, LayoutAuth } from './components/Layouts'; */
 
 /* import css project */
-import './style/ResetCSS.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/index.scss';
 /* _________________________________________ */
+import { Button } from './components/Button';
+import { Icon } from './components/Icon';
 
-import TopHeader from './components/SiteComponents/TopHeader';
+const a = () => {
+  return console.log('lol');
+}
 
 function App() {
   return (
-    <TopHeader />
+    <Button href="/">
+      Привет мир
+    </Button>
   );
 }
 
