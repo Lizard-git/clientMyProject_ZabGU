@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 interface ButtonProps{
     children: React.ReactChild | React.ReactNode,
     onClick?: any, 
-    href?: string | undefined,
+    href?: string,
     className?: string
 }
 
@@ -12,13 +12,16 @@ const Button:FC<ButtonProps> = ({children, onClick, href, className}) => {
     const event = (onClick !== null)? "Event ":""; 
     const classes = "Button "+ event + className;
     return (
-        <div className={classes}  onClick={onClick}>
-            {(href !== undefined)? 
-                <Link to={href}>
-                    {children}
-                </Link>
-            : children}
-        </div>
+        <>
+        {(href !== undefined)? 
+            <Link to={href} className={classes}  onClick={onClick}>
+                {children}
+            </Link>            
+        : 
+        <button className={classes}  onClick={onClick}>
+            {children}
+        </button>}
+        </>
     )
 }
 
