@@ -15,7 +15,7 @@ const a = () => {
 
 function App() {
   return (
-    <Button href="/">
+    <Button >
       <Icon name="home" size={16}/>
       Привет мир
     </Button>
