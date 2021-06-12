@@ -24,25 +24,29 @@
         {
             "text":"Schedule",
             "description":"schedule",
-            "urlImg":"./../../../../resurse/icon/carbon_event-schedule.svg",
+            "Icon":"schedule",
+            "sizeIcon": 24,
             "href": "/"
         },
         {
             "text":"",
             "description":"eye",
-            "urlImg":"./../../../../resurse/icon/la_eye-solid.svg",
+            "Icon":"eye",
+            "sizeIcon": 32,
             "href": "/"
         },
         {
             "text":"",
             "description":"search",
-            "urlImg":"./../../../../resurse/icon/fe_search.svg",
+            "Icon":"search",
+            "sizeIcon": 24,
             "href": "/"
         },
         {
             "text":"Sign in",
             "description":"Sign_in",
-            "urlImg":"",
+            "Icon":"login",
+            "sizeIcon": 24,
             "href": "/"
         }
     ]

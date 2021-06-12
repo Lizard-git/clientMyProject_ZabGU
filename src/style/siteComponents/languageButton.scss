@@ -1,0 +1,21 @@
+.LanguageGroup{
+    height: 100%;
+}
+
+.ButtonLanguage{
+    background-color: var(--white-color);
+    border: none;
+    width: 50px;
+    padding: 0.5rem;
+}
+
+.ButtonLanguage:hover{
+    background-color: var(--orange-color);
+    color: var(--font-white-color);
+}
+
+.Active{
+    background-color: var(--orange-color);
+    color: var(--font-white-color);
+    cursor: default !important;
+}

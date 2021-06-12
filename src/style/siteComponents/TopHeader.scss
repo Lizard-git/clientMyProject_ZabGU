@@ -1,0 +1,15 @@
+.TopHeader{
+    width: 100%;
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.ContainerGroup {
+    display: inline-flex;
+}
+
+.ContainerTopHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}

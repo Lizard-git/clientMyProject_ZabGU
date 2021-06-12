@@ -1,3 +1,4 @@
 @import-normalize; 
 @import './setting.scss'; /* подключаем стили с настройками цветов, подключением шрифтов ... */
 @import './components/index.scss'; /* подключаем стили всех компонентов */
+@import './siteComponents/index.scss';

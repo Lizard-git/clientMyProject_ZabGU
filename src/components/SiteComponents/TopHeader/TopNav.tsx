@@ -4,20 +4,19 @@ import buttons from "../../../assets/json/Buttons.json";
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Button } from '../../Button';
+import { Icon } from '../../Icon';
 
 const TopNav = () => {
     const { t } = useTranslation();
     return (
         <ButtonGroup className="TopNavGroup">
             {buttons.TopNav.map(Item =>
-                    <Button key={Item.description} className="ButtonTopNav">
+                    <Button  key={Item.description} className="ButtonTopNav">
                         {Item.text === "" ? "" :
-                            <p className={"textIconTop " + Item.description}>{t(Item.text)}</p>
+                            t(Item.text)
                         }
-                        {Item.urlImg === "" ? "" :
-                            <svg className="svg">
-                                <use xlinkHref={Item.urlImg} />
-                            </svg>
+                        {Item.Icon === "" ? "" :
+                            <Icon name={Item.Icon} size={Item.sizeIcon}/>
                         }
                     </Button>
             )}

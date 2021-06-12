@@ -8,7 +8,6 @@ import Cookie from '../../../scripts/CookieClass';
 import { setLang } from '../../../store/redusers/languageReducer';
 import { ButtonGroup } from '../../ButtonGroup';
 import { Button } from '../../Button';
-import './css/style.css';
 
 const LanguageButtonGroup = () => {
     const dispatch = useDispatch();
@@ -23,7 +22,7 @@ const LanguageButtonGroup = () => {
     
     return (
         <ButtonGroup className="LanguageGroup">
-            <Button className="ButtonLanguage">{temp?.Name}</Button>
+            <Button className="ButtonLanguage Active">{temp?.Name}</Button>
             {buttons.languageButton.map((Item) => 
                 (language === Item.Description) ? "":
                     <Button className="ButtonLanguage" onClick={() => changeLanguage(Item.Description)}>{Item.Name}</Button>

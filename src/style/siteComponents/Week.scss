@@ -1,0 +1,27 @@
+.Week{
+    display: inline-flex;
+    margin-left: 15px;
+}
+
+.Week > p {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Week span {
+    display: block;
+    height: 2px;
+    width: 32px;
+    position: relative;
+    background-color: black;
+}
+
+.WrapperIconWeek{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

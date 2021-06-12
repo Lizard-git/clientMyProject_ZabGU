@@ -1,0 +1,17 @@
+.ButtonTopNav{
+    border: none;
+}
+
+.ButtonTopNav:hover{
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
+
+.ButtonTopNav:hover{
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
+
+.ButtonTopNav:hover > svg{
+    fill: var(--white-color);
+}

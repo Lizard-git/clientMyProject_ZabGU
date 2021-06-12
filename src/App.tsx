@@ -5,9 +5,9 @@ import { LayoutAdminPanel, LayoutSite, LayoutAuth } from './components/Layouts';
 /* import css project */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/index.scss';
+import TopHeader from './components/SiteComponents/TopHeader';
 /* _________________________________________ */
-import { Button } from './components/Button';
-import { Icon } from './components/Icon';
+
 
 const a = () => {
   return console.log('lol');
@@ -15,10 +15,7 @@ const a = () => {
 
 function App() {
   return (
-    <Button >
-      <Icon name="home" size={16}/>
-      Привет мир
-    </Button>
+    <TopHeader />
   );
 }
 

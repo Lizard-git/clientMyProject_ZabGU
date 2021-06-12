@@ -8,8 +8,8 @@ interface BTNGroup{
 
 const ButtonGroup:FC<BTNGroup> = ({children, className, vertical, ...attrs}) => {
 
-    const VerticalActive = vertical? "vertical" : "";
-    const classes = "ButtonGroup " + className + " " + VerticalActive; 
+    const VerticalActive = vertical? " Vertical" : "";
+    const classes = "ButtonGroup " + className + VerticalActive; 
 
     return (
         <div className={classes} {...attrs}>

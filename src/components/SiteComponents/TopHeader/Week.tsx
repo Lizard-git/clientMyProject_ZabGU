@@ -36,12 +36,10 @@ const Week:FC<TypeWeek> = (week) => {
     const {t} = useTranslation();
     return (
         <div className="Week">
-            <div className="selectedWeek">
                 {
                     week ? 
                     <p className="textIconTop">{t('Top-Header')}</p>:<p className="textIconTop">{t('Bottom-Header')}</p>
                 }
-            </div>
             {week ? 
                 <>
                     <IconWeekTop className="WrapperIconWeek">
