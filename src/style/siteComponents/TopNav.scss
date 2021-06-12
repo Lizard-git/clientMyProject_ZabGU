@@ -2,6 +2,22 @@
     border: none;
 }
 
+.TextButtonTopHeader{
+    padding: 0;
+    margin: 0;
+}
+
+.IconTopNav{
+    width: 24px;
+    height: 24px;
+}
+
+.icon-eye{
+    width: 32px;
+    height: 32px;
+}
+
+
 .ButtonTopNav:hover{
     background-color: var(--orange-color);
     color: var(--white-color);
@@ -14,4 +30,28 @@
 
 .ButtonTopNav:hover > svg{
     fill: var(--white-color);
+}
+
+@media (max-width: 992px) {
+    .ButtonTopNav{
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    .TextButtonTopHeader{
+        display: none;
+    }
+}
+
+@media (max-width: 576px){
+    .IconTopNav{
+        width: 16px;
+        height: 16px;
+    }
+    
+    .icon-eye{
+        width: 20px;
+        height: 20px;
+    }
 }

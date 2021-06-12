@@ -38,7 +38,13 @@ const Week:FC<TypeWeek> = (week) => {
         <div className="Week">
                 {
                     week ? 
-                    <p className="textIconTop">{t('Top-Header')}</p>:<p className="textIconTop">{t('Bottom-Header')}</p>
+                    <p className="textIconTop">
+                        {t('Top-Header')}
+                    </p>
+                    :
+                    <p className="textIconTop">
+                        {t('Bottom-Header')}
+                    </p>
                 }
             {week ? 
                 <>

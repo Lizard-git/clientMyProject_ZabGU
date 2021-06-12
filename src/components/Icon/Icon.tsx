@@ -4,19 +4,18 @@ import IconsSVG from './../../assets/icon/icons.svg';
 interface IconProps{
     name: string,
     className?: string, 
-    size?: number
 }
 
-const Icon:FC<IconProps> = ({name, className, size}) => {
+const Icon:FC<IconProps> = ({name, className}) => {
     return (
-        <svg className={`icon icon-${name} ${className}`} width={size} height={size}>
+        <svg className={`icon icon-${name} ${className}`}>
             <use xlinkHref={`${IconsSVG}#icon-${name}`} />
         </svg>
     )
 }
 
 Icon.defaultProps = {
-    size: 32
+    className: ""
 }
 
 export default Icon

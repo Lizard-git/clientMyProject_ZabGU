@@ -13,10 +13,10 @@ const TopNav = () => {
             {buttons.TopNav.map(Item =>
                     <Button  key={Item.description} className="ButtonTopNav">
                         {Item.text === "" ? "" :
-                            t(Item.text)
+                            <p className="TextButtonTopHeader">{t(Item.text)}</p>
                         }
                         {Item.Icon === "" ? "" :
-                            <Icon name={Item.Icon} size={Item.sizeIcon}/>
+                            <Icon name={Item.Icon} className="IconTopNav"/>
                         }
                     </Button>
             )}

@@ -25,3 +25,23 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 576px) {
+    .textIconTop{
+        display: none !important;
+    }
+    .Week{
+        margin: 0;
+    }
+    .Week span {
+        height: 2px;
+        width: 24px;
+    }
+}
+
+@media (max-width: 768px){
+    .Week span {
+        height: 2px;
+        width: 20px;
+    }
+}

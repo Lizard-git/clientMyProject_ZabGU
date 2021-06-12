@@ -19,3 +19,16 @@
     color: var(--font-white-color);
     cursor: default !important;
 }
+
+@media (max-width: 768px){
+    .ButtonLanguage{
+        padding: 0;
+        width: 40px;
+    }
+}
+
+@media (max-width: 576px){
+    .ButtonLanguage{
+        width: 30px;
+    }
+}
