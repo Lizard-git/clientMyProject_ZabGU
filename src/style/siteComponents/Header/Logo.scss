@@ -1,0 +1,19 @@
+.Logo {
+    display: inline-flex;
+    height: 100px;
+    text-decoration: none;
+}
+
+.Logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.TextLogo {
+    margin-left: 10px;
+    margin-bottom: 0 ;
+    color: var(--font-white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

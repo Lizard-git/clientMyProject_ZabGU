@@ -5,9 +5,9 @@ import { LayoutAdminPanel, LayoutSite, LayoutAuth } from './components/Layouts';
 /* import css project */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/index.scss';
-import TopHeader from './components/SiteComponents/TopHeader';
 /* _________________________________________ */
-
+import TopHeader from './components/SiteComponents/TopHeader';
+import Header from './components/SiteComponents/Header';
 
 const a = () => {
   return console.log('lol');
@@ -15,7 +15,10 @@ const a = () => {
 
 function App() {
   return (
-    <TopHeader />
+    <>
+      <TopHeader />
+      <Header />
+    </>
   );
 }
 
