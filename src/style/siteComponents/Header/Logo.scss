@@ -2,11 +2,13 @@
     display: inline-flex;
     height: 100px;
     text-decoration: none;
+    align-items: center;
 }
 
-.Logo img {
-    width: 100px;
-    height: 100px;
+.LogoImg{
+    width: 95px;
+    height: 95px;
+    fill: white;
 }
 
 .TextLogo {
