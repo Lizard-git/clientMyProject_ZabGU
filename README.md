@@ -1,6 +1,8 @@
 This application was written in React for Zabkaikal State University as a pilot project in creating SPA applications while working at ZabGU
 At the moment, the project is frozen due to uselessness
 
+Worked with tools like TypeScript, Redux, i18n, scss
+
 Getting Started with Create React App
 This project was bootstrapped with Create React App.
 
